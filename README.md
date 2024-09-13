@@ -10,3 +10,10 @@ This workshop is delivered for one of our research customers that is looking int
 - GitHub Copilot License (Optional)
 - GitHub CLI: https://cli.github.com/
 - Docker CLI: https://github.com/docker/cli
+
+## Chapters
+
+- Hello World using GitHub Actions
+- Using Marketplace Action
+- Transformation of Jenkins Pipeline into GitHub using Importer
+- Transformation of Jenkins Pipeline into GitHub using Copilot
