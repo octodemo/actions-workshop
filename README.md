@@ -17,3 +17,11 @@ This workshop is delivered for one of our research customers that is looking int
 - Using Marketplace Action
 - Transformation of Jenkins Pipeline into GitHub using Copilot
 - Transformation of Jenkins Pipeline into GitHub using Importer
+
+### Chapter 1
+
+explains how to manually trigger a GitHub Actions workflow using the workflow_dispatch event, on issue create event and shows the basic structure of the workflow file, some environmental variables and such.
+
+[Link to the chapter](/docs/CH1.md)
+
+### Chapter 2
