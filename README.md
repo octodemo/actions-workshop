@@ -15,5 +15,5 @@ This workshop is delivered for one of our research customers that is looking int
 
 - Hello World using GitHub Actions
 - Using Marketplace Action
-- Transformation of Jenkins Pipeline into GitHub using Importer
 - Transformation of Jenkins Pipeline into GitHub using Copilot
+- Transformation of Jenkins Pipeline into GitHub using Importer
