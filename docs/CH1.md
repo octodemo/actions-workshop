@@ -1,4 +1,4 @@
-# Part 1 - Hello World
+# Chapter 1 - Hello World
 
 GitHub Actions is a continuous integration and continuous deployment (CI/CD) platform that allows you to automate your build, test, and deployment pipelines. It gives you the ability to create workflows that build and test every pull request to your repository, and then later automatically deploy merged pull requests to production.
 
@@ -114,91 +114,6 @@ This is just the tip of the iceberg. There are thousands of even more sophistica
 
 If you’re eager to explore all the existing Actions created not only by GitHub but by the entire open-source community, head over to the [GitHub Marketplace](https://github.com/marketplace?category=&query=&type=actions&verification=).
 
-## 3 - Use Environment variables and context
-
-You can use environment variables to add information that you would like to reference in your workflows. Some environment variables are even predefined for you to use immediately (e.g., the person who triggered the current workflow run). To make use of these, edit the "Hello World" workflow and add the following lines:
-
-1. Add an environment variable at the job level:
-
-   ```yml
-   greet:
-     env:
-       MY_ENV: "John Doe"
-   ```
-
-2. Add a second step to utilize your environment variable and a default one:
-
-   ```yml
-   - name: Run a multi-line script
-     run: |
-       echo "Hello $MY_ENV"
-       echo "Hello $GITHUB_ACTOR"
-   ```
-
-<details>
-<summary>Your workflow file (hello.yml) should now look like this:</summary>
-
-```yml
-name: Hello World Training Workflow
-
-on:
-  workflow_dispatch:
-
-jobs:
-  greet:
-    env:
-      MY_ENV: "John Doe"
-    runs-on: ubuntu-latest
-    steps:
-      - name: Greet the User
-        run: echo "Hello World!"
-      - name: Run a multi-line script
-        run: |
-          echo "Hello $MY_ENV"
-          echo "Hello $GITHUB_ACTOR"
-```
-
-</details>
-
-Commit your changes and start a new run. You should see the following in the run logs (note that the second `Hello` should print your own GitHub username):
-
-![Screenshot showing the logs of the step created above, showcasing that it printed the specified environment variable for $MY_ENV and the github-actor](https://user-images.githubusercontent.com/3329307/171652241-7b2f2eba-f5eb-4f3f-b529-dbf2198c65f7.png)
-
-To learn more about environment variables and default variables, see [the official GitHub documentation on Environment variables](https://docs.github.com/en/actions/learn-github-actions/environment-variables).
-
-## 4 - Make additional events trigger your workflow
-
-GitHub Actions workflows can be triggered by many different types of events:
-
-- [Events that trigger workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
-
-Let's modify our workflow so that it also runs automatically whenever an issue is created in our repository. This practice is commonly referred to as "IssueOps". To achieve this, add the following to the `on` section of the workflow file and commit the changes:
-
-```yml
----
-on:
-  workflow_dispatch:
-  issues:
-    types: [opened, edited]
-```
-
-Now create an issue in your repository and check the Actions tab. You should see the workflow run as follows:
-
-![image](https://user-images.githubusercontent.com/3329307/171652425-14a1ce9f-06c0-4b24-b937-7330c76c735f.png)
-
-## Conclusion
-
-In this first part of the Actions workshop, you have learned how to:
-
-- 👏 Create a new Actions workflow for automation.
-- 👏 Analyze your workflow runs and gain insights into what happened.
-- 👏 Use your first reusable Action.
-- 👏 Run automation on different events, including manual triggers and issues.
-
-Now let's use GitHub Actions to create a CI/CD workflow for our application.
-
----
-
 Next:
 
-- **[Basics of Continuous Integration with Actions](002-basics-of-ci-with-actions.md)**
+- **[Chapter 2](CH2.md)**
