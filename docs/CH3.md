@@ -63,6 +63,13 @@ jobs:
           color: "red"
 ```
 
-</details>
+## </details>
+
+---
 
 If you did well, you should see the below as an output:
+![Screenshot of cowsays output](images/003/cowsays.png)
+
+Next:
+
+- **[Chapter 4](CH4.md)**

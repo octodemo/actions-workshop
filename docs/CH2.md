@@ -135,7 +135,9 @@ jobs:
           echo "The secret is: $SUPER_SECRET"
 ```
 
-</details>
+## </details>
+
+---
 
 Commit your changes and try to run the workflow, either manually or via opening/editing the issue, what can you observe?
 
