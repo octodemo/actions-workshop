@@ -112,8 +112,6 @@ If you examine the workflow logs and compare the output of the two `ls -l` comma
 
 This is just the tip of the iceberg. There are thousands of even more sophisticated actions available for you to use, which can turn complex automations into a matter of a few lines of configuration. We will explore many of these throughout this workshop.
 
-If you’re eager to explore all the existing Actions created not only by GitHub but by the entire open-source community, head over to the [GitHub Marketplace](https://github.com/marketplace?category=&query=&type=actions&verification=).
-
 Next:
 
 - **[Chapter 2](CH2.md)**
