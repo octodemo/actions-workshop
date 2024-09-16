@@ -46,6 +46,7 @@ jobs:
   greet:
     env:
       MY_ENV: "John Doe"
+      SUPER_SECRET: ${{ secrets.SuperSecret }}
     runs-on: ubuntu-latest
     steps:
       - name: Greet the User
