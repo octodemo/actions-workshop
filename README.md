@@ -41,7 +41,7 @@ in this short module, we will use an existing GitHub Action called cowsays to gr
 
 we have some existing jenkins pipelines that we can use GitHub Copilot to help us translate into GitHub Actions workflow file, in this short module, we will showcase how to use Copilot Custom Instructions to do this more effectively
 
-[Link to the chapter](/docs/CH5.md)
+[Link to the chapter](/docs/CH4.md)
 
 ### Chapter 5
 
