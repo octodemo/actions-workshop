@@ -1,0 +1,25 @@
+name: Hello World Training Workflow
+
+on:
+  workflow_dispatch:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  greet:
+    env:
+      MY_ENV: "John Doe"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the User
+        run: echo "Hello World!"
+      - name: Run a multi-line script
+        run: |
+          echo "Hello $MY_ENV"
+          echo "Hello $GITHUB_ACTOR"
+          echo "The secret is: $SUPER_SECRET"
+      - name: Love Actions
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: "I love actions!"
+          color: "red"
