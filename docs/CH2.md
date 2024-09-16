@@ -94,7 +94,7 @@ After we stored the secret, we can add it into our workflow
    greet:
      env:
        MY_ENV: "John Doe"
-       SUPER_SECRET: ${{ secrets.SuperSecret }}
+       SUPER_SECRET: ${{ secrets.SUPER_SECRET }}
    ```
 
 2. Modify a second step to utilize your secret:
@@ -123,7 +123,7 @@ jobs:
     env:
       MY_ENV: "John Doe"
       MY_ENV: "John Doe"
-      SUPER_SECRET: ${{ secrets.SuperSecret }}
+      SUPER_SECRET: ${{ secrets.SUPER_SECRET }}
     runs-on: ubuntu-latest
     steps:
       - name: Greet the User
